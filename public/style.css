@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+  font-family: "Andika New Basic", sans-serif;
+
+  /* Does NOT work on Safari */
+  scroll-behavior: smooth;
+}
+body {
+  background: linear-gradient(20deg, #91a7ff 50%, #dbe4ff 10%) no-repeat center
+    center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: 2.6rem;
+  padding: 6rem 1rem 0rem;
+}
+h2 {
+  background-color: #91a7ff;
+  max-width: 42rem;
+  margin: 0rem auto 4rem;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.356);
+  color: #fff;
+  text-align: center;
+}
+.container {
+  max-width: 42rem;
+  height: 60vh;
+  padding: 0.4rem;
+  margin: auto;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.356);
+  background: #fff;
+
+  position: relative;
+}
+
+.list {
+  /* margin: 10vh auto; */
+  margin: 2rem 0.4rem;
+  height: 45vh;
+  overflow: hidden;
+  color: #495057;
+  transition: all 0.3s;
+}
+.list:hover {
+  overflow-y: scroll;
+}
+.list div {
+  border-bottom: 2px solid #dbe4ff;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+.check {
+  margin: 0 5rem;
+}
+.check:checked + span {
+  text-decoration: line-through;
+  color: #ced4da;
+}
+.ll {
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  background-color: #fff;
+  border-radius: 0 0 0 2rem;
+}
+button {
+  width: 6rem;
+  height: 6rem;
+  background-color: #91a7ff;
+  border: 0px none;
+  border-radius: 50%;
+  font-size: 4.6rem;
+  color: #fff;
+  box-shadow: 0.2rem 0.2rem 0.5rem #ced4da;
+}
+button:active {
+  box-shadow: none;
+}
+input[type="text"] {
+  width: 70%;
+  height: 6rem;
+  margin: 1rem 5% 1.5rem 4%;
+  border: none;
+  text-align: center;
+  font-size: 3.6rem;
+  transition: all 0.5s;
+}
+input[type="text"]::placeholder {
+  color: #dbe4ff;
+}
+input[type="text"]:focus-visible {
+  outline: none !important;
+  box-shadow: 0rem 0.3rem 0rem #91a7ff;
+}
+.link {
+  text-align: center;
+}
+footer {
+  margin-top: 0.6rem;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #ced4da;
+}
+@media (max-width: 25rem) {
+  body {
+    font-size: 2.3rem;
+    padding-top: 3rem;
+  }
+  input[type="text"] {
+    width: 65%;
+    height: 6rem;
+    font-size: 3.6rem;
+  }
+}
+p {
+  text-align: center;
+}

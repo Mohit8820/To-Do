@@ -1,0 +1,16 @@
+<%- include('header'); -%>
+    <h2><%= head %></h2>
+    <div class="container">
+      <div class="list">
+        <% for(var i=0;i<listItem.length;i++) {%>
+          <div><input type="checkbox" class="check" /><span><%= listItem[i] %></span></input></div>
+        
+        <% } %>
+      </div>
+      <form method="POST" action="/" class="ll">
+        <input type="text" name="newItem" placeholder="Add Item" autocomplete="off" />
+        <button type="submit" name="add" value=<%= head %>>+</button>
+      </form>
+    </div>
+    <div class="link"><a href="http://localhost:3000/work">Your works</a></div>
+    <%- include('footer'); -%>
